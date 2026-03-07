@@ -2,6 +2,21 @@
 
 Portfolio personnel professionnel, responsive et moderne (React + Vite).
 
+## Hébergement sur Git (GitHub)
+
+Le projet est déjà versionné avec Git. Pour le pousser sur GitHub :
+
+1. Créez un nouveau dépôt sur [GitHub](https://github.com/new) (sans initialiser avec un README).
+2. Puis exécutez dans le dossier du projet :
+
+```bash
+git remote add origin https://github.com/VOTRE-USERNAME/VOTRE-REPO.git
+git branch -M main
+git push -u origin main
+```
+
+Remplacez `VOTRE-USERNAME` et `VOTRE-REPO` par votre compte et le nom du dépôt.
+
 ## Démarrage
 
 ```bash
