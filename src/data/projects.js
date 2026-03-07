@@ -1,11 +1,40 @@
 /**
  * Projets : contenu, images et rapports de l’ancien portfolio (mohamedadnane1.github.io).
- * Images et PDFs hébergés sur l’ancien repo.
+ * Images illustratives locales dans public/projects/ pour une présentation soignée.
  */
 const OLD_IMG = 'https://mohamedadnane1.github.io/img'
 const OLD_DATA = 'https://mohamedadnane1.github.io/data'
+const LOCAL = '/projects'
 
 export const projects = [
+  {
+    id: 'parking-app',
+    title: 'Parking App',
+    description: 'Application de gestion et visualisation de parkings avec carte interactive (Leaflet), recherche et affichage des places en temps réel.',
+    context: 'Projet web — React, TypeScript, Vite et Leaflet pour la cartographie.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Leaflet'],
+    features: ['Carte interactive', 'Recherche de parkings', 'Affichage des places', 'Interface responsive'],
+    images: [`${LOCAL}/parking-app.png`],
+    githubUrl: 'https://github.com/mohamedadnane1/parking-app',
+    demoUrl: null,
+    reports: [],
+    status: 'github',
+    date: '2025',
+  },
+  {
+    id: 'runner-game',
+    title: 'Runner Game',
+    description: 'Jeu de course / runner en navigateur : évitement d’obstacles, score et rejouabilité.',
+    context: 'Projet ludique — game dev web.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    features: ['Gameplay runner', 'Obstacles', 'Score', 'Rejouabilité'],
+    images: [`${LOCAL}/runner-game.png`],
+    githubUrl: 'https://github.com/mohamedadnane1/runner-game',
+    demoUrl: null,
+    reports: [],
+    status: 'github',
+    date: '2024',
+  },
   {
     id: 'cericar',
     title: 'CERICar (Covoiturage)',
@@ -14,6 +43,7 @@ export const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'Yii'],
     features: ['Inscription', 'Recherche de trajets', 'Publication d\'offres', 'Système AJAX', 'MVC avec Yii'],
     images: [
+      `${LOCAL}/cericar.png`,
       `${OLD_IMG}/pages/cericar/c1.png`,
       `${OLD_IMG}/pages/cericar/c2.png`,
       `${OLD_IMG}/pages/cericar/c3.png`,
@@ -36,6 +66,7 @@ export const projects = [
     technologies: ['Java', 'Android Studio', 'Realm', 'Retrofit'],
     features: ['Quiz interactif Amiibo', 'API en ligne', 'Favoris', 'Musique', 'Scores', 'Persistance', 'UI intuitive'],
     images: [
+      `${LOCAL}/amiibo-quiz.png`,
       `${OLD_IMG}/GridProjects/quizz.png`,
       `${OLD_IMG}/GridProjects/quizz2.png`,
       `${OLD_IMG}/GridProjects/quizz3.png`,
@@ -56,6 +87,7 @@ export const projects = [
     technologies: ['Java', 'JavaFX'],
     features: ['Deviner un mot', 'Retour de couleur', 'Choix de difficulté', 'Classement', 'MVC'],
     images: [
+      `${LOCAL}/wordle.png`,
       `${OLD_IMG}/pages/wordle/w1.PNG`,
       `${OLD_IMG}/pages/wordle/w2.PNG`,
       `${OLD_IMG}/pages/wordle/w3.PNG`,
@@ -78,7 +110,7 @@ export const projects = [
     context: 'Projet structuré, logique claire, séparation header/source.',
     technologies: ['C++'],
     features: ['Affichage grille', 'Tour par tour', 'Détection victoire/égalité', 'Mode 1v1 local'],
-    images: [`${OLD_IMG}/GridProjects/puissance4.png`],
+    images: [`${LOCAL}/puissance4.png`, `${OLD_IMG}/GridProjects/puissance4.png`],
     githubUrl: 'https://github.com/mohamedadnane1/puissance4c-',
     demoUrl: null,
     reports: [],
@@ -92,7 +124,7 @@ export const projects = [
     context: 'Projet web — e-commerce.',
     technologies: ['HTML', 'CSS', 'JS', 'PHP', 'SQL'],
     features: ['Catalogue produit', 'Panier', 'Gestion commandes', 'Interface admin sécurisée', 'MVC'],
-    images: [`${OLD_IMG}/GridProjects/car.jpg`],
+    images: [`${LOCAL}/site-vente.png`, `${OLD_IMG}/GridProjects/car.jpg`],
     githubUrl: null,
     demoUrl: null,
     reports: [],
@@ -106,7 +138,7 @@ export const projects = [
     context: 'Projet 2024 — plateforme collaborative en temps réel.',
     technologies: ['Django', 'Channels', 'WebSocket', 'JavaScript'],
     features: ['Partage vidéos/photos synchronisées', 'Chat temps réel', 'Réactions', 'Gestion de salle', 'Mode invité'],
-    images: [`${OLD_IMG}/GridProjects/memtogeetheher.png`],
+    images: [`${LOCAL}/memtogether.png`, `${OLD_IMG}/GridProjects/memtogeetheher.png`],
     githubUrl: null,
     demoUrl: null,
     reports: [
@@ -122,7 +154,7 @@ export const projects = [
     context: 'Projet web — suivi et rappels produits.',
     technologies: ['HTML', 'CSS', 'JS', 'PHP', 'SQL'],
     features: ['Recherche', 'Détails', 'Favoris', 'Notifications', 'Alertes personnalisées', 'Filtres dynamiques', 'Responsive'],
-    images: [`${OLD_IMG}/GridProjects/rappelProduitApp.webp`],
+    images: [`${LOCAL}/rappel-produit.png`, `${OLD_IMG}/GridProjects/rappelProduitApp.webp`],
     githubUrl: null,
     demoUrl: null,
     reports: [],
@@ -137,6 +169,7 @@ export const projects = [
     technologies: ['UML', 'Conception orientée objet'],
     features: ['Diagrammes de cas d\'usage', 'Diagramme de classes', 'Diagrammes de séquences', 'Diagrammes d\'états'],
     images: [
+      `${LOCAL}/uml-vente.png`,
       `${OLD_IMG}/pages/uml/usecase.png`,
       `${OLD_IMG}/pages/uml/classe.png`,
       `${OLD_IMG}/pages/uml/seuquence.png`,
@@ -150,8 +183,5 @@ export const projects = [
   },
 ]
 
-/** Autres documents de l’ancien portfolio (data/) — à utiliser où tu veux */
-export const oldPortfolioDocs = [
-  { label: 'CV / Présentation (PDF)', url: `${OLD_DATA}/AdnaneMohamed.pdf` },
-  { label: 'Rapport projet (PDF)', url: `${OLD_DATA}/projet.pdf` },
-]
+/** Autres documents de l’ancien portfolio (liste vide : CV via personalInfo.cvUrl) */
+export const oldPortfolioDocs = []

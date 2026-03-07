@@ -11,6 +11,6 @@ export const personalInfo = {
   location: 'Avignon, France',
   linkedin: 'https://www.linkedin.com/in/mohamed-adnane-9b730927b/',
   github: 'https://github.com/mohamedadnane1',
-  cvUrl: '',
+  cvUrl: '/cv.pdf',
   avatarUrl: null,
 }
