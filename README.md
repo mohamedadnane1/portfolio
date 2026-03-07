@@ -17,6 +17,34 @@ git push -u origin main
 
 Remplacez `VOTRE-USERNAME` et `VOTRE-REPO` par votre compte et le nom du dépôt.
 
+## Mettre le portfolio en ligne (tout le monde peut le voir)
+
+Le projet est configuré pour **GitHub Pages** : à chaque push sur `main`, le site est construit et publié.
+
+### Étapes
+
+1. **Créer un dépôt sur GitHub**  
+   Allez sur [github.com/new](https://github.com/new), nom du dépôt : **`portfolio`** (sans README).
+
+2. **Pousser le code** (si pas déjà fait) :
+   ```bash
+   git remote add origin https://github.com/mohamedadnane1/portfolio.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Activer GitHub Pages**  
+   Dans le dépôt : **Settings** → **Pages** → **Source** : choisir **"GitHub Actions"**.
+
+4. **Attendre le déploiement**  
+   Après le premier push, l’onglet **Actions** exécute le workflow. Quand c’est vert, le site est en ligne.
+
+5. **Lien public**  
+   Le portfolio sera accessible à l’adresse :  
+   **https://mohamedadnane1.github.io/portfolio/**
+
+Tu peux partager ce lien (CV, LinkedIn, candidatures). Chaque nouveau push sur `main` met le site à jour automatiquement.
+
 ## Démarrage
 
 ```bash

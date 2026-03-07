@@ -1,18 +1,22 @@
 /**
  * Compétences techniques
- * Ajoutez ou modifiez les catégories et items selon votre profil.
+ * Aligné avec vos projets GitHub (C++, Java, Python, web).
  */
 export const skills = [
   {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Vite'],
+    category: 'Langages & Algorithmique',
+    items: ['C', 'C++', 'Java', 'Python', 'Structures de données', 'Arbres', 'Hachage'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Python', 'API REST', 'Bases de données'],
+    category: 'Web',
+    items: ['HTML', 'CSS', 'JavaScript', 'React', 'Vite', 'GitHub Pages'],
   },
   {
-    category: 'Outils & Méthodes',
-    items: ['Git', 'GitHub', 'Figma', 'Agile', 'Tests'],
+    category: 'Data & IA',
+    items: ['Q-Learning', 'Reinforcement Learning', 'Python'],
+  },
+  {
+    category: 'Outils',
+    items: ['Git', 'GitHub', 'Linux'],
   },
 ]

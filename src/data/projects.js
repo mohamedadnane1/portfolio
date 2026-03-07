@@ -1,50 +1,85 @@
 /**
  * Liste des projets du portfolio
- *
- * Chaque projet peut être :
- * - Sur GitHub (status: 'github') : renseignez githubUrl
- * - Local / privé (status: 'local') : pas de lien GitHub, affiche "Projet local"
- *
- * Champs :
- * - id : unique (slug)
- * - title : nom du projet
- * - description : courte description
- * - context : contexte (projet perso, école, stage, etc.)
- * - technologies : tableau de technologies
- * - features : liste des fonctionnalités principales
- * - images : chemins vers images (dans public/, ex: /projects/mon-projet-1.jpg)
- * - githubUrl : lien GitHub ou null
- * - demoUrl : lien démo ou null
- * - status : 'github' | 'local' | 'private'
- * - date : année ou date (ex: "2024")
- *
- * Pour ajouter vos vrais projets plus tard, dupliquez un bloc et remplissez les champs.
+ * Projets GitHub : https://github.com/mohamedadnane1
+ * Pour les projets non poussés sur GitHub : indiquez le chemin ou les images, on les ajoute en status 'local'.
  */
 export const projects = [
   {
-    id: 'placeholder-1',
-    title: 'Projet à venir (GitHub)',
-    description: 'Exemple de projet avec dépôt GitHub. Remplacez par votre vrai projet.',
-    context: 'Projet personnel ou scolaire.',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    features: ['Fonctionnalité 1', 'Fonctionnalité 2', 'API REST'],
-    images: [], // ex: ['/projects/projet1-1.jpg', '/projects/projet1-2.jpg']
-    githubUrl: 'https://github.com',
+    id: 'portfolio-html',
+    title: 'Portfolio (HTML)',
+    description: 'Ancien portfolio en HTML, hébergé sur GitHub Pages.',
+    context: 'Projet personnel — mise en ligne d’un portfolio statique.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+    features: ['Site statique', 'Hébergement GitHub Pages'],
+    images: [],
+    githubUrl: 'https://github.com/mohamedadnane1/mohamedadnane1.github.io',
+    demoUrl: 'https://mohamedadnane1.github.io',
+    status: 'github',
+    date: '2024',
+  },
+  {
+    id: 'wordle-project',
+    title: 'Wordle (Java)',
+    description: 'Implémentation du jeu Wordle en Java.',
+    context: 'Projet personnel ou scolaire — jeu de lettres.',
+    technologies: ['Java'],
+    features: ['Jeu en console ou interface', 'Logique Wordle'],
+    images: [],
+    githubUrl: 'https://github.com/mohamedadnane1/WORDLEPROJECT',
     demoUrl: null,
     status: 'github',
     date: '2024',
   },
   {
-    id: 'placeholder-2',
-    title: 'Projet local / privé',
-    description: 'Exemple de projet sans GitHub : démo, stage, ou projet confidentiel.',
-    context: 'Projet local ou entreprise.',
-    technologies: ['Python', 'SQL', 'Data'],
-    features: ['Traitement de données', 'Rapports', 'Scripts'],
+    id: 'qlearning',
+    title: 'Q-Learning',
+    description: 'Projet d’apprentissage par renforcement avec l’algorithme Q-Learning.',
+    context: 'Projet data / IA — renforcement (Python).',
+    technologies: ['Python', 'Q-Learning', 'Reinforcement Learning'],
+    features: ['Algorithme Q-Learning', 'Simulation / entraînement'],
     images: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/mohamedadnane1/Qlearning',
     demoUrl: null,
-    status: 'local',
+    status: 'github',
+    date: '2024',
+  },
+  {
+    id: 'puissance4-c',
+    title: 'Puissance 4 (C)',
+    description: 'Jeu Puissance 4 réalisé en C.',
+    context: 'Projet algorithmique et programmation en C.',
+    technologies: ['C'],
+    features: ['Grille de jeu', 'Détection des alignements', 'Tour par tour'],
+    images: [],
+    githubUrl: 'https://github.com/mohamedadnane1/puissance4c-',
+    demoUrl: null,
+    status: 'github',
+    date: '2024',
+  },
+  {
+    id: 'tp-hachage',
+    title: 'TP Hachage (C++)',
+    description: 'Travaux pratiques sur les structures de hachage en C++.',
+    context: 'Projet scolaire — structures de données.',
+    technologies: ['C++', 'Structures de données', 'Hachage'],
+    features: ['Tables de hachage', 'Gestion des collisions'],
+    images: [],
+    githubUrl: 'https://github.com/mohamedadnane1/tphachage',
+    demoUrl: null,
+    status: 'github',
+    date: '2024',
+  },
+  {
+    id: 'ab-to-abr',
+    title: 'AB vers ABR (C++)',
+    description: 'Conversion ou manipulation d’arbres binaires (AB) en arbres binaires de recherche (ABR).',
+    context: 'Projet algorithmique — structures d’arbres en C++.',
+    technologies: ['C++', 'Structures de données', 'Arbres binaires'],
+    features: ['Arbres binaires', 'ABR', 'Algorithmes sur arbres'],
+    images: [],
+    githubUrl: 'https://github.com/mohamedadnane1/ab-to-abr',
+    demoUrl: null,
+    status: 'github',
     date: '2024',
   },
 ]
