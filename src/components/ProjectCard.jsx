@@ -10,7 +10,8 @@ export default function ProjectCard({ project, onClick }) {
   const { title, description, technologies, status, images } = project
   const hasImage = images && images.length > 0
   const base = import.meta.env.BASE_URL || ''
-  const imgSrc = hasImage && (images[0].startsWith('http') || images[0].startsWith('/') ? images[0] : base + images[0])
+  const rawSrc = hasImage && images[0]
+  const imgSrc = rawSrc && (rawSrc.startsWith('http') ? rawSrc : base.replace(/\/$/, '') + (rawSrc.startsWith('/') ? '' : '/') + rawSrc)
 
   return (
     <article

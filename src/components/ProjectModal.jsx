@@ -17,6 +17,7 @@ export default function ProjectModal({ project, onClose }) {
     technologies,
     features,
     images,
+    explication,
     githubUrl,
     demoUrl,
     reports,
@@ -86,12 +87,19 @@ export default function ProjectModal({ project, onClose }) {
               </ul>
             </div>
           )}
+          {explication && (
+            <div className={styles.block}>
+              <h4>Présentation</h4>
+              <p className={styles.explication}>{explication}</p>
+            </div>
+          )}
           {images && images.length > 0 && (
             <div className={styles.block}>
               <h4>Captures</h4>
               <div className={styles.gallery}>
                 {images.map((src, i) => {
-                const resolvedSrc = src.startsWith('http') || src.startsWith('/') ? src : (import.meta.env.BASE_URL || '') + src
+                const base = (import.meta.env.BASE_URL || '').replace(/\/$/, '')
+                const resolvedSrc = src.startsWith('http') ? src : base + (src.startsWith('/') ? src : '/' + src)
                 return <img key={i} src={resolvedSrc} alt={`Capture ${i + 1}`} className={styles.galleryImg} />
               })}
               </div>
@@ -132,7 +140,7 @@ export default function ProjectModal({ project, onClose }) {
                 Voir la démo
               </a>
             )}
-            {!githubUrl && !demoUrl && status !== 'github' && (
+            {!githubUrl && !demoUrl && status !== 'github' && !explication && (
               <span className={styles.noLink}>Projet sans lien public</span>
             )}
           </div>

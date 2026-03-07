@@ -15,7 +15,7 @@ export default function About() {
               <span className={styles.metaItem}>📍 {personalInfo.location}</span>
             )}
             {personalInfo.cvUrl && (
-              <a href={personalInfo.cvUrl} className={styles.cvLink} target="_blank" rel="noopener noreferrer">
+              <a href={`${import.meta.env.BASE_URL || '/'}${personalInfo.cvUrl}`} className={styles.cvLink} target="_blank" rel="noopener noreferrer" download>
                 Télécharger mon CV
               </a>
             )}

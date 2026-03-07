@@ -127,7 +127,8 @@
   margin-bottom: 0.5rem;
 }
 
-.block p {
+.block p,
+.explication {
   font-size: 0.9375rem;
   line-height: 1.6;
 }
