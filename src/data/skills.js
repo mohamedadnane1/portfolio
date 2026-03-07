@@ -4,7 +4,7 @@
  */
 export const skills = [
   {
-    category: 'Frameworks & CMS (entreprise)',
+    category: 'Frameworks & CMS',
     items: ['Symfony', 'WordPress', 'PrestaShop', 'Laravel', 'React', 'Node.js'],
   },
   {
