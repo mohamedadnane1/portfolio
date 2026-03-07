@@ -170,6 +170,24 @@
   border: 1px solid var(--border);
 }
 
+.reports {
+  padding-left: 1.25rem;
+}
+
+.reports li {
+  margin-bottom: 0.5rem;
+}
+
+.reportLink {
+  font-size: 0.9375rem;
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+.reportLink:hover {
+  color: var(--accent-hover);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

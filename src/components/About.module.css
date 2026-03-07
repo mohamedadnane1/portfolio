@@ -51,3 +51,35 @@
 .cvLink:hover {
   color: var(--accent-hover);
 }
+
+.docs {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.docsTitle {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.docsList {
+  padding-left: 1.25rem;
+}
+
+.docsList li {
+  margin-bottom: 0.35rem;
+}
+
+.docLink {
+  font-size: 0.9375rem;
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+.docLink:hover {
+  color: var(--accent-hover);
+}

@@ -1,4 +1,5 @@
 import { personalInfo } from '../data/personalInfo'
+import { oldPortfolioDocs } from '../data/projects'
 import styles from './About.module.css'
 
 export default function About() {
@@ -19,6 +20,20 @@ export default function About() {
               </a>
             )}
           </div>
+          {oldPortfolioDocs && oldPortfolioDocs.length > 0 && (
+            <div className={styles.docs}>
+              <h3 className={styles.docsTitle}>Documents (ancien portfolio)</h3>
+              <ul className={styles.docsList}>
+                {oldPortfolioDocs.map((doc, i) => (
+                  <li key={i}>
+                    <a href={doc.url} target="_blank" rel="noopener noreferrer" className={styles.docLink}>
+                      📄 {doc.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </section>

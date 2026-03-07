@@ -19,6 +19,7 @@ export default function ProjectModal({ project, onClose }) {
     images,
     githubUrl,
     demoUrl,
+    reports,
     status,
     date,
   } = project
@@ -94,6 +95,20 @@ export default function ProjectModal({ project, onClose }) {
                 return <img key={i} src={resolvedSrc} alt={`Capture ${i + 1}`} className={styles.galleryImg} />
               })}
               </div>
+            </div>
+          )}
+          {reports && reports.length > 0 && (
+            <div className={styles.block}>
+              <h4>Rapports / Documents</h4>
+              <ul className={styles.reports}>
+                {reports.map((r, i) => (
+                  <li key={i}>
+                    <a href={r.url} target="_blank" rel="noopener noreferrer" className={styles.reportLink}>
+                      📄 {r.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
           <div className={styles.actions}>
