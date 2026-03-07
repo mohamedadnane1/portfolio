@@ -1,7 +1,12 @@
 /**
  * Compétences — d’après le CV et l’ancien portfolio (mohamedadnane1.github.io).
+ * Frameworks & CMS utilisés en entreprise.
  */
 export const skills = [
+  {
+    category: 'Frameworks & CMS (entreprise)',
+    items: ['Symfony', 'WordPress', 'PrestaShop', 'Laravel', 'React', 'Node.js'],
+  },
   {
     category: 'Développement Web',
     items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'AJAX', 'Django', 'jQuery', 'Bootstrap', 'Yii'],
