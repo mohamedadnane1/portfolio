@@ -1,22 +1,21 @@
 /**
- * Compétences techniques
- * Aligné avec vos projets GitHub (C++, Java, Python, web).
+ * Compétences — d’après le CV et l’ancien portfolio (mohamedadnane1.github.io).
  */
 export const skills = [
   {
-    category: 'Langages & Algorithmique',
-    items: ['C', 'C++', 'Java', 'Python', 'Structures de données', 'Arbres', 'Hachage'],
+    category: 'Développement Web',
+    items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'AJAX', 'Django', 'jQuery', 'Bootstrap', 'Yii'],
   },
   {
-    category: 'Web',
-    items: ['HTML', 'CSS', 'JavaScript', 'React', 'Vite', 'GitHub Pages'],
+    category: 'Langages & Logiciel',
+    items: ['Java', 'JavaFX', 'C++', 'C', 'Python', 'Kotlin', 'Bash', 'LaTeX'],
   },
   {
-    category: 'Data & IA',
-    items: ['Q-Learning', 'Reinforcement Learning', 'Python'],
+    category: 'Mobile & Outils',
+    items: ['Android Studio', 'Realm', 'Retrofit', 'WebSocket', 'Channels', 'MVC', 'UML'],
   },
   {
-    category: 'Outils',
-    items: ['Git', 'GitHub', 'Linux'],
+    category: 'Bases de données & Méthodes',
+    items: ['MySQL', 'PostgreSQL', 'SQLite', 'PL/SQL', 'Git', 'GitHub', 'ODBC'],
   },
 ]

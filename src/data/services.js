@@ -1,18 +1,21 @@
 /**
- * Section "Ce que je sais faire" / Services
- * Modifiez selon votre profil (développement web, APIs, data, etc.)
+ * Ce que je sais faire — aligné avec le CV et l’ancien portfolio.
  */
 export const services = [
   {
     title: 'Développement web',
-    description: 'Sites et applications React, interfaces modernes et responsive.',
+    description: 'Sites et applications PHP (Yii, Django), JavaScript, AJAX, interfaces fluides et responsive.',
   },
   {
-    title: 'APIs & Backend',
-    description: 'Conception et mise en place d’APIs REST, bases de données.',
+    title: 'Applications mobiles',
+    description: 'Android avec Java/Kotlin : quiz, API REST, persistance (Realm), UX soignée.',
   },
   {
-    title: 'Projets complets',
-    description: 'De la maquette au déploiement, en passant par les tests.',
+    title: 'Projets temps réel & collaboratifs',
+    description: 'Django, WebSocket, Channels — applications multi-utilisateurs et synchronisées.',
+  },
+  {
+    title: 'Conception & modélisation',
+    description: 'MVC, UML, bases de données relationnelles, bonnes pratiques backend/frontend.',
   },
 ]

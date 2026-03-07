@@ -9,6 +9,8 @@ const STATUS_LABELS = {
 export default function ProjectCard({ project, onClick }) {
   const { title, description, technologies, status, images } = project
   const hasImage = images && images.length > 0
+  const base = import.meta.env.BASE_URL || ''
+  const imgSrc = hasImage && (images[0].startsWith('http') || images[0].startsWith('/') ? images[0] : base + images[0])
 
   return (
     <article
@@ -20,7 +22,7 @@ export default function ProjectCard({ project, onClick }) {
     >
       <div className={styles.media}>
         {hasImage ? (
-          <img src={images[0]} alt="" className={styles.img} />
+          <img src={imgSrc} alt="" className={styles.img} />
         ) : (
           <div className={styles.placeholder}>
             <span>{title.charAt(0)}</span>

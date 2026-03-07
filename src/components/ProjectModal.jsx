@@ -89,9 +89,10 @@ export default function ProjectModal({ project, onClose }) {
             <div className={styles.block}>
               <h4>Captures</h4>
               <div className={styles.gallery}>
-                {images.map((src, i) => (
-                  <img key={i} src={src} alt={`Capture ${i + 1}`} className={styles.galleryImg} />
-                ))}
+                {images.map((src, i) => {
+                const resolvedSrc = src.startsWith('http') || src.startsWith('/') ? src : (import.meta.env.BASE_URL || '') + src
+                return <img key={i} src={resolvedSrc} alt={`Capture ${i + 1}`} className={styles.galleryImg} />
+              })}
               </div>
             </div>
           )}

@@ -1,17 +1,16 @@
 /**
- * Informations personnelles et hero
- * Modifiez ces valeurs pour personnaliser votre portfolio.
+ * Informations personnelles — d’après le CV Mohamed Adnane.
  */
 export const personalInfo = {
   name: 'Mohamed Adnane',
-  title: 'Développeur Full Stack',
-  tagline: 'Conception, développement et déploiement de solutions web et logicelles.',
-  shortBio: 'Développeur passionné par les projets concrets, le code propre et les architectures maintenables. Polyvalent : web, C++, Java, Python et algorithmique.',
-  email: 'votre.email@exemple.com',
-  phone: '',
-  location: 'France',
-  linkedin: 'https://linkedin.com/in/mohamed-adnane',
+  title: 'Étudiant en Informatique — Full-stack & ingénierie logicielle',
+  tagline: 'Applications complètes en autonomie : web, mobile, données. Motivation pour la poursuite en Master.',
+  shortBio: 'Étudiant en informatique ayant conçu plusieurs applications complètes en autonomie, démontrant une forte capacité d\'apprentissage, de conception logicielle et une motivation affirmée pour la poursuite en Master. Licence Informatique à l\'Université d\'Avignon (2022-2025).',
+  email: 'mohamedadnanelycee@gmail.com',
+  phone: '07 67 35 16 49',
+  location: 'Avignon, France',
+  linkedin: 'https://www.linkedin.com/in/mohamed-adnane-9b730927b/',
   github: 'https://github.com/mohamedadnane1',
-  cvUrl: '', // optionnel : lien vers votre CV (ex: /cv.pdf)
-  avatarUrl: null, // optionnel : chemin vers une photo (ex: /avatar.jpg)
+  cvUrl: '',
+  avatarUrl: null,
 }
