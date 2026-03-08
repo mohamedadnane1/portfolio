@@ -1,10 +1,8 @@
 /**
- * Projets : contenu, images et rapports de l’ancien portfolio (mohamedadnane1.github.io).
- * Images illustratives locales dans public/projects/ pour une présentation soignée.
+ * Projets : ancien portfolio + GitHub. Images illustratives (Unsplash, libres d’usage).
  */
-const OLD_IMG = 'https://mohamedadnane1.github.io/img'
 const OLD_DATA = 'https://mohamedadnane1.github.io/data'
-const LOCAL = '/projects'
+const U = (id) => `https://images.unsplash.com/photo-${id}?w=800&q=85&fit=crop`
 
 export const projects = [
   {
@@ -14,7 +12,7 @@ export const projects = [
     context: 'Projet web — React, TypeScript, Vite et Leaflet pour la cartographie.',
     technologies: ['React', 'TypeScript', 'Vite', 'Leaflet'],
     features: ['Carte interactive', 'Recherche de parkings', 'Affichage des places', 'Interface responsive'],
-    images: [`${LOCAL}/parking-app.png`],
+    images: [U('1560518883-ce09059eeffa')], // parking
     githubUrl: 'https://github.com/mohamedadnane1/parking-app',
     demoUrl: null,
     reports: [],
@@ -28,7 +26,7 @@ export const projects = [
     context: 'Projet ludique — game dev web.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     features: ['Gameplay runner', 'Obstacles', 'Score', 'Rejouabilité'],
-    images: [`${LOCAL}/runner-game.png`],
+    images: [U('1542751371-adc38448a05e')], // gaming
     githubUrl: 'https://github.com/mohamedadnane1/runner-game',
     demoUrl: null,
     reports: [],
@@ -42,7 +40,7 @@ export const projects = [
     context: 'Projet structure de données — algorithmes sur les arbres.',
     technologies: ['C++', 'Structures de données', 'Arbres binaires'],
     features: ['Conversion AB → ABR', 'Parcours et équilibrage'],
-    images: [`${LOCAL}/ab-abr-cover.png`],
+    images: [U('1555066931-4365d15bab67')], // code / structure
     githubUrl: 'https://github.com/mohamedadnane1/ab-to-abr',
     demoUrl: null,
     reports: [],
@@ -56,7 +54,7 @@ export const projects = [
     context: 'Projet intelligence artificielle / apprentissage par renforcement.',
     technologies: ['Python', 'Q-Learning', 'Reinforcement Learning'],
     features: ['Agent Q-Learning', 'Environnement discret', 'Exploration / exploitation'],
-    images: [`${LOCAL}/qlearning-cover.png`],
+    images: [U('1677442136019-21780ecad995')], // AI / neural
     githubUrl: 'https://github.com/mohamedadnane1/Qlearning',
     demoUrl: null,
     reports: [],
@@ -70,7 +68,7 @@ export const projects = [
     context: 'Projet structure de données — hachage.',
     technologies: ['C++', 'Structures de données', 'Hachage'],
     features: ['Table de hachage', 'Gestion des collisions', 'Recherche / insertion'],
-    images: [`${LOCAL}/tphachage-cover.png`],
+    images: [U('1555949963-aa79dcee981c')], // code / algorithm
     githubUrl: 'https://github.com/mohamedadnane1/tphachage',
     demoUrl: null,
     reports: [],
@@ -84,7 +82,7 @@ export const projects = [
     context: 'Développement web avec le framework Yii — Janvier 2025. UE Programmation Web, Université d’Avignon.',
     technologies: ['PHP', 'Yii', 'HTML', 'CSS', 'JavaScript', 'SQL'],
     features: ['Inscription', 'Recherche de trajets', 'Publication d\'offres', 'Système AJAX', 'MVC avec Yii'],
-    images: [`${LOCAL}/cericar.png`],
+    images: [U('1449965408869-eaa3708e3a5e')], // car / covoiturage
     explication: 'Projet réalisé en janvier 2025 dans le cadre de l’UE Programmation Web à l’Université d’Avignon. CERICar est une application web complète de covoiturage développée avec le framework PHP Yii (architecture MVC). Côté front : HTML, CSS et JavaScript pour une interface fluide ; les requêtes AJAX permettent de rechercher des trajets, de publier des offres et de consulter les résultats sans rechargement de page. Côté back : PHP avec Yii, base de données SQL pour les utilisateurs, trajets et réservations. Fonctionnalités principales : inscription et authentification, formulaire de recherche (ville, date, places), publication d’offres de covoiturage, liste des trajets avec détails, et gestion des réservations. Le projet est resté en local (pas de dépôt public) et aucune capture d’écran n’est disponible.',
     githubUrl: null,
     demoUrl: null,
@@ -99,11 +97,11 @@ export const projects = [
     context: 'Application Android — Mars 2025. Cours Application Mobile et Ergonomie, Université d’Avignon.',
     technologies: ['Java', 'Android Studio', 'Realm', 'Retrofit'],
     features: ['Quiz interactif Amiibo', 'API en ligne', 'Favoris', 'Musique', 'Scores', 'Persistance', 'UI intuitive'],
-    images: [`${LOCAL}/amiibo-quiz.png`],
+    images: [U('1512941937669-90a1b58e7e9c')], // mobile app / quiz
     githubUrl: 'https://github.com/mohamedadnane1/amiibo',
     demoUrl: null,
     reports: [
-      { label: 'Rapport Amiibo Quiz (PDF)', url: `${OLD_DATA}/projetamiboo.pdf` },
+      { label: 'Rapport Amiibo Quiz (PDF)', url: 'https://mohamedadnane1.github.io/portfolio/rapport-amiibo.pdf' },
     ],
     status: 'github',
     date: 'Mars 2025',
@@ -115,11 +113,11 @@ export const projects = [
     context: 'Projet 2024 — application pédagogique et ludique.',
     technologies: ['Java', 'JavaFX'],
     features: ['Deviner un mot', 'Retour de couleur', 'Choix de difficulté', 'Classement', 'MVC'],
-    images: [`${LOCAL}/wordle.png`],
+    images: [U('1611195974226-ef7c8d2c6602')], // mots / lettres
     githubUrl: 'https://github.com/mohamedadnane1/WORDLEPROJECT',
     demoUrl: null,
     reports: [
-      { label: 'Rapport Wordle (PDF)', url: `${OLD_DATA}/Mod%C3%A8le_de_rapport___Avignon_Universit%C3%A9__5_.pdf` },
+      { label: 'Rapport Wordle (PDF)', url: 'https://mohamedadnane1.github.io/portfolio/rapport-wordle.pdf' },
     ],
     status: 'github',
     date: '2024',
@@ -131,7 +129,7 @@ export const projects = [
     context: 'Projet structuré, logique claire, séparation header/source.',
     technologies: ['C++'],
     features: ['Affichage grille', 'Tour par tour', 'Détection victoire/égalité', 'Mode 1v1 local'],
-    images: [`${LOCAL}/puissance4.png`],
+    images: [U('1587655176381-2f207289a0c5')], // jeu / grille
     githubUrl: 'https://github.com/mohamedadnane1/puissance4c-',
     demoUrl: null,
     reports: [],
@@ -145,7 +143,7 @@ export const projects = [
     context: 'Projet web — e-commerce.',
     technologies: ['PHP', 'HTML', 'CSS', 'JavaScript', 'SQL'],
     features: ['Catalogue produit', 'Panier', 'Gestion commandes', 'Interface admin sécurisée', 'MVC'],
-    images: [`${LOCAL}/site-vente.png`],
+    images: [U('1556742049-0cfed4f6a45d')], // e-commerce / shop
     explication: 'Projet de site e-commerce réalisé en 2024. Application web complète en PHP (côté serveur), HTML, CSS et JavaScript (front), avec une base de données SQL pour stocker les produits, commandes et utilisateurs. Structure en MVC pour séparer logique métier, données et présentation. Côté client : catalogue produits avec fiches détail, panier d’achat, formulaire de commande et pages de confirmation. Côté administration : interface sécurisée (accès restreint) pour gérer le catalogue (ajout, modification, suppression de produits), consulter les commandes et mettre à jour les statuts. Expérience utilisateur pensée pour être fluide et responsive. Le projet est resté en local, sans dépôt public ni capture d’écran.',
     githubUrl: null,
     demoUrl: null,
@@ -160,7 +158,7 @@ export const projects = [
     context: 'Projet 2024 — plateforme collaborative en temps réel.',
     technologies: ['Django', 'Channels', 'WebSocket', 'JavaScript', 'Python'],
     features: ['Partage vidéos/photos synchronisées', 'Chat temps réel', 'Réactions', 'Gestion de salle', 'Mode invité'],
-    images: [`${LOCAL}/memtogether.png`],
+    images: [U('1522071820081-009f0129c71c')], // collaboration
     explication: 'Projet 2024 : plateforme collaborative permettant à plusieurs utilisateurs de regarder ensemble des vidéos ou des photos, synchronisées en temps réel. Backend en Python avec le framework Django ; la partie temps réel (synchro de lecture, chat, réactions) repose sur Django Channels et WebSockets. Les utilisateurs peuvent créer ou rejoindre une salle, envoyer des messages dans un chat en direct, réagir (emojis ou réactions) et suivre la même position dans la vidéo ou le diaporama. Gestion des rôles (créateur de salle, invités) et persistance des échanges. Un rapport de projet (PDF) est disponible ci-dessous. Projet réalisé en local, pas de dépôt public ni de capture d’écran.',
     githubUrl: null,
     demoUrl: null,
@@ -177,7 +175,7 @@ export const projects = [
     context: 'Projet web — suivi et rappels produits.',
     technologies: ['PHP', 'HTML', 'CSS', 'JavaScript', 'SQL'],
     features: ['Recherche', 'Détails', 'Favoris', 'Notifications', 'Alertes personnalisées', 'Filtres dynamiques', 'Responsive'],
-    images: [`${LOCAL}/rappel-produit.png`],
+    images: [U('1556742049-0cfed4f6a45d')], // app / produits
     explication: 'Application web de suivi et rappel de produits, réalisée en 2024. Stack : PHP (back), HTML, CSS, JavaScript (front), SQL (base de données). L’utilisateur peut rechercher des produits (barre de recherche, filtres dynamiques), consulter les fiches détail, mettre des produits en favoris et configurer des alertes ou notifications (par exemple pour un prix ou une disponibilité). Les rappels personnalisés et la sécurité des données (sessions, accès) ont été pris en compte. Interface responsive pour une bonne utilisation sur mobile et desktop. Projet resté en local, sans dépôt public ni capture d’écran.',
     githubUrl: null,
     demoUrl: null,
@@ -192,13 +190,27 @@ export const projects = [
     context: 'Projet académique — conception UML.',
     technologies: ['UML', 'Conception orientée objet'],
     features: ['Diagrammes de cas d\'usage', 'Diagramme de classes', 'Diagrammes de séquences', 'Diagrammes d\'états'],
-    images: [`${LOCAL}/uml-vente.png`],
+    images: [U('1551288049-bebda4e38f71')], // dashboard / diagrammes
     explication: 'Projet académique de modélisation UML (2024) pour un système métier de vente dans le secteur textile. Conception orientée objet sans implémentation : uniquement des diagrammes. Diagramme de cas d’usage : acteurs (client, vendeur, admin) et cas d’utilisation (commander, gérer stock, gérer commandes, etc.). Diagramme de classes : entités (Client, Produit, Commande, Ligne de commande, etc.) avec attributs et associations. Diagrammes de séquences : enchaînement des interactions entre objets pour les scénarios principaux (passation de commande, validation, mise à jour stock). Diagrammes d’états : cycles de vie (par exemple état d’une commande : en cours, validée, expédiée). Pas de code ni de dépôt public.',
     githubUrl: null,
     demoUrl: null,
     reports: [],
     status: 'local',
     date: '2024',
+  },
+  {
+    id: 'parking-dsi-avignon',
+    title: 'Application gestion parking (DSI Avignon)',
+    description: 'Application interne de gestion du parking : réservation, allocation et notifications mail asynchrones.',
+    context: 'Stage DSI Avignon — 2026.',
+    technologies: ['Symfony', 'Twig', 'SQLite', 'Messenger', 'LDAP'],
+    features: ['Réservation', 'Allocation', 'Notifications mail asynchrones'],
+    images: [U('1551288049-bebda4e38f71')], // admin / bureau
+    githubUrl: null,
+    demoUrl: null,
+    reports: [],
+    status: 'local',
+    date: '2026',
   },
 ]
 
