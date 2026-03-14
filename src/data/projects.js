@@ -200,6 +200,23 @@ export const projects = [
     date: '2024',
   },
   {
+    id: 'dat-novashop',
+    title: 'Document d\'Architecture Technique (DAT) — NovaShop',
+    description: 'Document d\'architecture technique complet pour une entreprise e-commerce fictive : infrastructure cloud (GCP), sécurité, base de données, CI/CD, gouvernance des données et conformité RGPD.',
+    context: 'Projet académique — Cours Systèmes d\'Information d\'Entreprises. Rédaction d\'un DAT pour la plateforme fictive NovaShop (Mai 2025).',
+    technologies: ['Google Cloud Platform', 'Cloud Run', 'Cloud SQL', 'PostgreSQL', 'GitHub Actions', 'Node.js', 'React', 'Firebase', 'Terraform', 'IAM'],
+    features: ['Architecture cloud-first', 'Infrastructure GCP (Cloud Run, Cloud SQL, Storage)', 'Sécurité (IAM, 2FA, chiffrement)', 'CI/CD (GitHub Actions, Cloud Build)', 'Gouvernance RGPD', 'Monitoring et logging', 'Matrice RACI et procédures'],
+    images: [`${LOCAL}/dat-novashop.png`],
+    explication: 'Document d\'Architecture Technique (fictif) rédigé pour une entreprise e-commerce nommée NovaShop. Il décrit l\'ensemble de l\'organisation technique : infrastructure (Google Workspace, GitHub, GCP, Slack, Notion, OVH), architecture logicielle (React, Node.js/Express, Cloud Run, Cloud SQL), réseau et sécurité (chiffrement, IAM, 2FA, audit), environnement cloud (Compute, conteneurs, Cloud Build), base de données PostgreSQL, gestion des accès (matrice RACI, utilisateurs internes/externes), gouvernance des données (stockage, sauvegardes, RGPD), choix technologiques, tests, et estimation des coûts. Le document constitue un référentiel exploitable pour les équipes techniques et les décideurs. Réalisé par ADNANE Mohamed et ARBAI Aymane (Mai 2025).',
+    githubUrl: null,
+    demoUrl: null,
+    reports: [
+      { label: 'Télécharger le Document d\'Architecture Technique (PDF)', url: '/projects/dat-architecture-technique-novashop.pdf' },
+    ],
+    status: 'local',
+    date: 'Mai 2025',
+  },
+  {
     id: 'parking-dsi-avignon',
     title: 'Application gestion parking (DSI Avignon)',
     description: 'Application interne de gestion du parking : réservation, allocation et notifications mail asynchrones.',
